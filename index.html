@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table -->
+    <link rel="stylesheet" href="./css/w3.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -97,11 +111,11 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">homeskate</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-university"></i>history</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-map-pin"></i> spots</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-plug"></i> shops</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-video-camera"></i> videos</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-street-view"></i> local legends</a>
+      <a href="#history" class="w3-bar-item w3-button"><i class="fa fa-university"></i>history</a>
+      <a href="#spots" class="w3-bar-item w3-button"><i class="fa fa-map-pin"></i> spots</a>
+      <a href="#shops" class="w3-bar-item w3-button"><i class="fa fa-plug"></i> shops</a>
+      <a href="#videos" class="w3-bar-item w3-button"><i class="fa fa-video-camera"></i> videos</a>
+      <a href="#local legends" class="w3-bar-item w3-button"><i class="fa fa-street-view"></i> local legends</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -114,15 +128,15 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">history</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">spots</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">shops</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">videos</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">local legends</a>
+  <a href="#history" onclick="w3_close()" class="w3-bar-item w3-button">history</a>
+  <a href="#spots" onclick="w3_close()" class="w3-bar-item w3-button">spots</a>
+  <a href="#shops" onclick="w3_close()" class="w3-bar-item w3-button">shops</a>
+  <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button">videos</a>
+  <a href="#local legends" onclick="w3_close()" class="w3-bar-item w3-button">local legends</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" 
+<header class="bgimg-1 w3-display-container" 
       style="max-width: 2500px; min-width: 500px"
       id="home"
       >
@@ -133,7 +147,7 @@ body, html {
     <span class="w3-jumbo w3-hide-small">skate:</span><br>
     <span class="w3-jumbo w3-hide-small">san francisco</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">the home of skate: san francisco</span><br>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">get involved</a></p>
+    <p><a href="#history" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">get involved</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -150,7 +164,7 @@ body, html {
 <!-- Page content -->
     <div class="w3-content" style="max-width: 1100px">
       <!-- Food Section -->
-      <div class="w3-row w3-padding-64" id="food">
+      <div class="w3-row w3-padding-64" id="history">
         <div class="w3-padding-large">
           <h1 class="w3-center">history</h1>
           <!-- step 1: add images to the img folder -->
@@ -188,10 +202,8 @@ body, html {
           </div>
 
           <hr />
-
           <!--Spots (seasoning)-->
-
-      <div class="w3-row w3-padding-64" id="seasoning">
+  <div class="w3-row w3-padding-64" id="spots">
         <div class="w3-padding-large">
           <h1 class="w3-center">spots</h1>
           <!-- carousel slideshow begin -->
@@ -386,62 +398,233 @@ body, html {
           </div>
         </div>
       </div>
-
-      <hr />
-
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
+    </div>
   </div>
 </div>
 
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
+      <hr />
 
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
+<!-- skate shop table section" -->
+  <div class="w3-container w3-padding-64 w3-padding-large;" style="background-color: blue;" id="shops">
+        <div class="w3-padding-large">
+          <h1 class="w3-center">shops</h1>
+          <!-- add sortable table begin -->
+          <!-- step 1: if the table displays images, add image files to img folder -->
+          <!-- step 2: create a table with 4 columns -->
+          <!-- step 3: add jquery links inside the <head> tag above to support sortability -->
+          <!-- step 4: add javascript in <script> tag below to sort in in ascending/descending order -->
+
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-brown">
+                <th>shop</th>
+                <th>name</th>
+                <th>location</th>
+                <th>year founded</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-sand">
+              <td><img src="./img/ftc-storefront.jpeg" style="width: 120px" /></td>
+              <td>ftc</td>
+              <td>1632 haight st.</td>
+              <td>1994</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>
+                <img src="./img/wooden-spoons-01.jpeg" style="width: 120px" />
+              </td>
+              <td>dlx</td>
+              <td>2330 mission st</td>
+              <td>1986</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+              <td>lowkey</td>
+              <td>697 geary st.</td>
+              <td>2019</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>
+                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+              </td>
+              <td>mission</td>
+              <td>3045 24th st.</td>
+              <td>2007</td>
+            </tr>
+          </table>
+          <!-- add sortable table end -->
+        </div>
+      </div>
+  </div>
+  <div class="w3-content" style="max-width: 1100px">
   </div>
 
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+<hr />
+
+<!-- more id section -->
+      <!-- videos -->
+      <div class="w3-container w3-padding-64" id="videos">
+        <div class="w3-padding-large">
+          <h1 class="w3-center">videos</h1>
+          <!-- add youtube video begin -->
+          <!-- step 1: use w3-row and w3-col classes to allocated spaces for youtube videos -->
+          <!--    source: https://www.w3schools.com/w3css/w3css_responsive.asp -->
+          <!-- step 2: browser to https://www.youtube.com/ and search for videos -->
+          <!-- step 3: look for the youtube video embedded code and copy the code snippet -->
+          <!-- step 4: paste the code snippet in the space created with w3-row and w3-col classes -->
+
+          <div class="w3-row w3-row-padding">
+            <!-- create 1st column -->
+            <div class="w3-col m6 w3-center">
+              <!-- paste the YouTube video link -->
+              <iframe width="500" height="300" 
+              src="https://www.youtube.com/embed/tV01JADspNo?si=62uhRLooLGZtZ6W5" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="autoplay;"
+              >
+            </iframe>
+            </div>
+            <!-- create 2nd column -->
+            <div class="w3-col m4 w3-center">
+              <!-- paste the YouTube video link -->
+            <iframe width="500" height="300" 
+            src="https://www.youtube.com/embed/NmcSSQKH1d8?si=Zyac8YoI2S4bZyzc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="autoplay;"
+            >
+          </iframe>
+            </div>
+            <!-- create 3rd column -->
+            <div class="w3-col m6 w3-center">
+              <!-- paste the YouTube video link -->
+             <iframe width="500" height="300" 
+             src="https://www.youtube.com/embed/OugnAu0B1Qk?si=M5UrqLIybLEM4IIT" 
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="autoplay;">
+            </iframe>
+            </div>
+
+            <div class="w3-col m4 w3-center">
+              <iframe width="500" height="300" 
+              src="https://www.youtube.com/embed/hXrdZ5kWRqs?si=7oDCuTFxluxhRJ7T" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="autoplay;">
+            </iframe>
+            </div>
+          </div>
+
+          <!-- repeat the steps above to display more youtube videos -->
+          <div class="w3-row">
+            <!-- add code to display more youtube videos here... -->
+          </div>
+          <!-- add youtube video end -->
+        </div>
+      </div>
+
+      <!-- add accordion begin -->
+          <!-- step 1: add accordion button -->
+          <!-- step 2: add accordion content -->
+          <!-- step 3: add accordion javascript in <script> below -->
+          <!-- step 4: use id selectors in <style> tag above to format the accordion buttons -->
+          <div class="w3-row">
+            <!-- create an area to hold both accordion button and content -->
+            <div class="w3-col s6 w3-left" style="padding-right: 3px">
+              <!-- add accordion button here -->
+              <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+              <!-- set a unique id="accordionBtn1" for the button -->
+              <button
+                onclick="myAccordion('accordion1')"
+                class="w3-button w3-block w3-brown w3-center-align"
+                id="about this old ledge"
+              >
+                <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+                <h4>about this old ledge <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <!-- add accordion content here -->
+              <!-- set a unique id="accordion1" for the accordion content -->
+              <div
+                id="accordion1"
+                class="w3-hide w3-container"
+                style="height: 260px"
+              >
+                <p>
+                 "This Old Ledge" is a YouTube series from Thrasher Magazine that explores the cultural and architectural history of well-known skateboarding spots. 
+                 Hosted by Ted Barrow, the series goes beyond just showcasing skateboarding tricks to delve into how these locations were originally designed, 
+                 how they've evolved within skateboarding culture, and the legendary figures and tricks associated with them. It examines the interplay between urban spaces, 
+                 architecture, and the history of skateboarding, providing a unique blend of academic insight and skateboarding knowledge.
+                </p>
+              </div>
+            </div>
+            <!-- repeat the steps to create another accordion button and content here -->
+            <!-- each button id and accordion content id should be unique -->
+            <!-- set button to myAccordion('accordion2') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <div class="w3-col s6 w3-left" style="padding-left: 3px">
+              <button
+                onclick="myAccordion('accordion2')"
+                class="w3-button w3-block w3-brown w3-center-align"
+                id="accordionBtn2"
+              >
+                <h4>about the host <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <!-- add accordion content here -->
+              <!-- set a unique id="accordion2" for the accordion content -->
+              <div
+                id="accordion2"
+                class="w3-hide w3-container"
+                style="height: 260px"
+              >
+                <p>
+                  The host, Ted Barrow, is an art historian and a skateboarder. He holds a Ph.D. in art history from the Graduate Center, 
+                  City University of New York (CUNY), where his dissertation focused on the art and development of Gilded Age Florida. 
+                  Barrow has taught art history at various colleges and has experience as a walking tour guide, leading architectural tours of Manhattan. 
+                  His expertise allows him to connect architectural and urban history with skateboarding, offering a distinct perspective on the significance of skate spots. 
+                  He currently lives in San Francisco, California.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- add accordion end -->
+
+      <hr />
+
+<!-- local legends -->
+<div class="w3-container" style="padding:128px 16px" id="local legends">
+  <h3 class="w3-center">local legends</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding w3-rest w3-flex" style="margin-top:64px;">
+    <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
+      <img src="./img/chico-brenes.jpeg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="chico brenes">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
+      <img src="./img/mike-carroll.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="mike carroll">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    <div class="w3-col l4 m6" style="height:400px; overflow:hidden;">
+      <img src="./img/frank-gerwer.webp" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="frank gerwer">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+   
+  </div>
+
+  <div class="w3-row-padding w3-rest w3-flex" style="margin-top:64px;">
+    <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
+      <img src="./img/javontae-turner.jpg" style="width:100%; height:100%; object-fit:cover; object-position:top;" onclick="onClick(this)" class="w3-hover-opacity" alt="javontae turner">
     </div>
+    <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
+      <img src="./img/nico hiraga.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="nico hiraga">
+    </div>
+    <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
+      <img src="./img/tommy guerrero.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="tommy guerrero">
+    </div>
+  
   </div>
 </div>
 
@@ -639,6 +822,34 @@ function w3_open() {
     mySidebar.style.display = 'block';
   }
 }
+ // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
+
+ // accordion begin
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // accordion end
 
 // Close the sidebar with the close button
 function w3_close() {
