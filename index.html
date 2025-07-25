@@ -37,6 +37,13 @@ body, html {
   min-height: 100%;
 }
 
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./img/DSC01786.JPG");
+  min-height: 100%;
+}
+
 .w3-bar .w3-button {
   padding: 16px;
 }
@@ -186,7 +193,7 @@ body, html {
                 style="width: 100%"
                 max width="300px"
               />
-              San Francisco holds an undeniable and legendary status in the annals of skateboarding history, particularly as a crucible for modern street skating. In the 1980s, while other cities were building skateparks, SF's steep hills, abundance of public plazas, unique ledges, and iconic stair sets provided an unparalleled natural terrain that forced innovation. Skaters like Tommy Guerrero and Jim Thiebaud, emerging from the Bones Brigade era, utilized the city's urban architecture as their playground, defining a raw, aggressive style that shifted skateboarding's focus from empty pools and ramps to the street. This environment cultivated a technical yet powerful approach to skating, deeply influencing the sport's direction.
+              San Francisco holds an undeniable and legendary status in the annals of skateboarding history, particularly as a crucible for modern street skating. In the 1980s, while other cities were building skateparks, <a href="https://www.sfgate.com/local/article/san-francisco-hills-17700185.php">SF's steep hills</a>, abundance of public plazas, unique ledges, and iconic stair sets provided an unparalleled natural terrain that forced innovation. Skaters like Tommy Guerrero and Jim Thiebaud, emerging from the <a href="https://bonesbrigade.com/">Bones Brigade</a> era, utilized the city's urban architecture as their playground, defining a raw, aggressive style that shifted skateboarding's focus from empty pools and ramps to the street. This environment cultivated a technical yet powerful approach to skating, deeply influencing the sport's direction.
             </p>
             <br />
             <p>
@@ -197,7 +204,7 @@ body, html {
                 style="width: 100%"
                 max width="300px"
               />
-              By the 1990s, San Francisco cemented its reputation as a global mecca for street skating. Spots like Pier 7, Justin Herman Plaza (often called "EMB" for Embarcadero), and Fort Miley became legendary proving grounds, drawing pros and aspiring amateurs from around the world. These spots not only showcased incredible talent but also became cultural hubs where new tricks were invented, styles evolved, and groundbreaking video parts were filmed. The city's challenging landscape, combined with a strong, independent skate scene and the rise of local companies, ensured San Francisco's enduring legacy as a city that didn't just participate in skateboarding history, but actively shaped its very foundation.
+              By the 1990s, San Francisco cemented its reputation as a global mecca for street skating. Spots like Pier 7, <a href ="https://embarcaderoplaza.com/">Justin Herman Plaza</a> (often called "EMB" for Embarcadero), and Fort Miley became legendary proving grounds, drawing pros and aspiring amateurs from around the world. These spots not only showcased incredible talent but also became cultural hubs where new tricks were invented, styles evolved, and groundbreaking video parts were filmed. The city's challenging landscape, combined with a strong, independent skate scene and the rise of <a href="http://127.0.0.1:5500/index.html#shops">local companies</a>, ensured San Francisco's enduring legacy as a city that didn't just participate in skateboarding history, but actively shaped its very foundation.
             </p>
           </div>
 
@@ -422,7 +429,7 @@ body, html {
           <!-- scrollable area begin -->
           <!-- 3 columns of scrollable areas - using w3-row and w3-col classes for partitions -->
           <div class="w3-row">
-            <div class="w3-col s4 w3-padding w3-pale-red">
+            <div class="w3-col s4 w3-padding" style="background-color: #da9086;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -433,7 +440,7 @@ body, html {
               >
                 <h2>spots</h2>
               </div>
-              <div class="my-scrolling" style="padding-right: 10px">
+              <div class="my-scrolling" style="padding-right: 10px; color: azure;">
                 <p>
                   Skate spots are the unofficial, foundational elements of street skateboarding, fundamentally distinct from purpose-built skateparks or DIY constructions. 
                   They are simply existing public or private locations that, through a skateboarder's unique perspective, reveal features ideal for tricks and maneuvers. 
@@ -446,7 +453,7 @@ body, html {
                 </p>
               </div>
             </div>
-            <div class="w3-col s4 w3-padding w3-pale-red">
+            <div class="w3-col s4 w3-padding" style="background-color:azure;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -465,7 +472,7 @@ body, html {
                 </p>
               </div>
             </div>
-            <div class="w3-col s4 w3-padding w3-pale-red">
+            <div class="w3-col s4 w3-padding" style="background-color: #da9086;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -476,7 +483,7 @@ body, html {
               >
                 <h2>diy</h2>
               </div>
-              <div class="my-scrolling" style="padding-right: 10px">
+              <div class="my-scrolling" style="padding-right: 10px; color:azure;">
                 <p>
                 DIY skate spots occupy a unique and crucial middle ground between natural street spots and professionally built skateparks. These are environments painstakingly constructed by skateboarders themselves, often in overlooked, abandoned, or underutilized urban spaces like derelict warehouses, empty lots, or forgotten industrial zones. Using basic materials such as concrete, wood, and found objects, skaters take it upon themselves to pour banks, mold ledges, build quarter pipes, and craft obstacles specifically designed for their sport. This process is driven purely by passion and ingenuity, transforming neglected areas into functional and innovative skateable terrain through sheer collective effort.
                 <br>
@@ -502,7 +509,8 @@ body, html {
       <hr />
 
 <!-- skate shop table section" -->
-  <div class="w3-container w3-padding-64 w3-padding-large;" style="background-color: blue;" id="shops">
+  <div class="w3-container w3-padding-64 w3-padding-large;" style="background-color:#da9086; border-color: #da9086;" id="shops">
+    <div class="w3-content">
         <div class="w3-padding-large">
           <h1 class="w3-center">shops</h1>
           <!-- add sortable table begin -->
@@ -513,36 +521,36 @@ body, html {
 
           <table id="myTable" class="w3-table-all">
             <thead>
-              <tr class="w3-brown">
+              <tr style="color: black; font-size: larger; width: 1100px;">
                 <th>shop</th>
                 <th>name</th>
                 <th>location</th>
                 <th>year founded</th>
               </tr>
             </thead>
-            <tr class="w3-hover-sand">
-              <td><img src="./img/ftc-storefront.jpeg" style="width: 120px" /></td>
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
+              <td><img src="./img/ftc-storefront.jpeg" style="width: 120px;" /></td>
               <td>ftc</td>
               <td>1632 haight st.</td>
               <td>1994</td>
             </tr>
-            <tr class="w3-hover-sand">
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
               <td>
-                <img src="./img/wooden-spoons-01.jpeg" style="width: 120px" />
+                <img src="./img/Deluxe-Skate-Shop-San-Franscisco.jpg" style="width: 120px; height: 120px;" />
               </td>
               <td>dlx</td>
               <td>2330 mission st</td>
               <td>1986</td>
             </tr>
-            <tr class="w3-hover-sand">
-              <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
+              <td><img src="./img/lowkey.jpg" style="width: 120px; height: 120px; object-fit: cover; object-position: center;" /></td>
               <td>lowkey</td>
               <td>697 geary st.</td>
               <td>2019</td>
             </tr>
-            <tr class="w3-hover-sand">
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px">
               <td>
-                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+                <img src="./img/mission-skate.jpeg" style="width: 120px; height: 120px; object-fit: cover; object-position: center;" />
               </td>
               <td>mission</td>
               <td>3045 24th st.</td>
@@ -553,6 +561,7 @@ body, html {
         </div>
       </div>
   </div>
+</div>
   <div class="w3-content" style="max-width: 1100px">
   </div>
 
@@ -570,7 +579,7 @@ body, html {
           <!-- step 3: look for the youtube video embedded code and copy the code snippet -->
           <!-- step 4: paste the code snippet in the space created with w3-row and w3-col classes -->
 
-          <div class="w3-row w3-row-padding">
+          <div class="w3-row w3-row-padding;">
             <!-- create 1st column -->
             <div class="w3-col m6 w3-center">
               <!-- paste the YouTube video link -->
@@ -635,7 +644,7 @@ body, html {
               <!-- set a unique id="accordionBtn1" for the button -->
               <button
                 onclick="myAccordion('accordion1')"
-                class="w3-button w3-block w3-brown w3-center-align"
+                class="w3-button w3-block w3-center-align" style="background-color: #da9086; color:azure"
                 id="about this old ledge"
               >
                 <!-- 
@@ -667,7 +676,7 @@ body, html {
             <div class="w3-col s6 w3-left" style="padding-left: 3px">
               <button
                 onclick="myAccordion('accordion2')"
-                class="w3-button w3-block w3-brown w3-center-align"
+                class="w3-button w3-block w3-center-align" style="background-color: #da9086; color: azure;"
                 id="accordionBtn2"
               >
                 <h4>about the host <i class="fa fa-caret-down"></i></h4>
@@ -694,83 +703,195 @@ body, html {
       <hr />
 
 <!-- local legends -->
-<div class="w3-container" style="padding:128px 16px" id="local legends">
-  <h3 class="w3-center">local legends</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
+<div class="bgimg-2 w3-display-container" 
+      style="max-width: 2500px; min-width: 500px;"
+      id="home"
+      >
+<div class="w3-container" style="padding:128px 16px; color: azure;" id="local legends">
+  <h2 class="w3-center">local legends</h2>
 
   <div class="w3-row-padding w3-rest w3-flex" style="margin-top:64px;">
     <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
-      <img src="./img/chico-brenes.jpeg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="chico brenes">
+      <img src="./img/chico-brenes.jpeg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-shadow w3-hover-opacity" alt="chico brenes">
     </div>
     <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
-      <img src="./img/mike-carroll.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="mike carroll">
+      <img src="./img/mike-carroll.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-shadow w3-hover-opacity" alt="mike carroll">
     </div>
     <div class="w3-col l4 m6" style="height:400px; overflow:hidden;">
-      <img src="./img/frank-gerwer.webp" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="frank gerwer">
+      <img src="./img/frank-gerwer.webp" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="document.getElementById('modal03').style.display='block'" class= "w3-hover-shadow w3-hover-opacity" alt="frank gerwer">
     </div>
    
   </div>
 
   <div class="w3-row-padding w3-rest w3-flex" style="margin-top:64px;">
     <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
-      <img src="./img/javontae-turner.jpg" style="width:100%; height:100%; object-fit:cover; object-position:top;" onclick="onClick(this)" class="w3-hover-opacity" alt="javontae turner">
+      <img src="./img/javontae-turner.jpg" style="width:100%; height:100%; object-fit:cover; object-position:top;" onclick="document.getElementById('modal04').style.display='block'" class= "w3-hover-shadow w3-hover-opacity" alt="javontae turner">
     </div>
     <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
-      <img src="./img/nico hiraga.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="nico hiraga">
+      <img src="./img/nico hiraga.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="document.getElementById('modal05').style.display='block'" class= "w3-hover-shadow w3-hover-opacity" alt="nico hiraga">
     </div>
     <div class="w3-col l4 m6" style="height:400px; overflow: hidden;">
-      <img src="./img/tommy guerrero.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="onClick(this)" class="w3-hover-opacity" alt="tommy guerrero">
+      <img src="./img/tommy guerrero.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;" onclick="document.getElementById('modal06').style.display='block'" class= "w3-hover-shadow w3-hover-opacity" alt="tommy guerrero">
     </div>
-  
+  </div>
   </div>
 </div>
+</div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<hr />
+
+<!--class approved modal-->
+<!-- add the first modal, set id="modal01"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal01"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">chico brenes</h4>
+              <img src="./img/chico-brenes.jpeg" style="width: 100%; cursor: zoom-in; object-fit: cover; object-position: center; margin: auto;" />
+            </div>
+          </div>
+
+          <!-- add the second modal, set id="modal02"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal02"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">mike carroll</h4>
+              <img src="./img/mike-carroll.jpg" style="width: 100%; cursor: zoom-in; object-fit:cover; object-position:center; margin: auto;" />
+            </div>
+          </div>
+        </div>
+
+         <!-- add the third modal, set id="modal03"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal03"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">frank gerwer</h4>
+              <img src="./img/frank-gerwer.webp" style="width: 100%; cursor: zoom-in; object-fit:cover; object-position:center; margin: auto;" />
+            </div>
+          </div>
+        </div>
+        <!-- add the fourth modal, set id="modal04"-->
+        <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal04"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">javontae turner</h4>
+              <img src="./img/javontae-turner.jpg" style="width: 100%; cursor: zoom-in; object-fit:cover; object-position:center; margin: auto;" />
+            </div>
+          </div>
+        </div>
+       <!-- add the Fifth modal, set id="modal05"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal05"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">nico hiraga</h4>
+              <img src="./img/nico hiraga.jpg" style="width: 100%; cursor: zoom-in; object-fit:cover; object-position:center; margin: auto;" />
+            </div>
+          </div>
+        </div>
+        <!-- add the sixth modal, set id="modal06"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal06"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">tommy guerrero</h4>
+              <img src="./img/tommy guerrero.jpg" style="width: 100%; cursor: zoom-in; object-fit:cover; object-position:center; margin: auto;" />
+            </div>
+          </div>
+        </div>
+<!-- original Modal for full size images on click-->
+<!--<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div>-->
 
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
+<footer class="w3-bottom w3-bar w3-center w3-card w3-black">
+  <a href="#home" class="w3-center w3-button w3-light-grey" style="height: 40px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-left" style="padding-left: 40px; font-size: 12px;">
+    <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> san francisco, ca us</p>
+    <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> email: mail@mail.com</p>
+  </div>
+  <div class="w3-xlarge w3-section w3-right" style="padding-right: 40px;">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <div style="font-size: 12px;">
+    <p><i class="fa fa-copyright" style="font-size:12px"></i>All Rights Reserved.</p>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green" style="font-size: 12px;">w3.css</a></p>
 </footer>
  
 <script>
