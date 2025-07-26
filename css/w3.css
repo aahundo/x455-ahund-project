@@ -1707,3 +1707,6 @@ w3-hover-cobalt:hover {
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
 }
+.video-container {
+  margin-bottom: 30px; /*adjust this value for vertical spacing */
+}

@@ -104,7 +104,7 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar w3-white w3-padding w3-card" id="myNavbar">
     <!-- add shoppping card thing here,see recording -->
      <div>
       <a class="w3-padding-large w3-hide-small w3-right">
@@ -143,8 +143,7 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" 
-      style="max-width: 2500px; min-width: 500px"
+<header class="bgimg-1 w3-display-container"
       id="home"
       >
   <div class="w3-display-left w3-text-white" style="padding:48px">
@@ -332,11 +331,11 @@ body, html {
             <div class="w3-row" style="width:300px;">
             <!-- "currentDiv(1)" link to 1st slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
-            <div class="w3-card" style="height:250px; width:500px">
+            <div class="w3-card" style="height:250px; max-width:500px">
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./img/IMG_4564.jpeg"
-              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; width: 500px; overflow: hidden;"
+              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; max-width: 500px; overflow: hidden;"
 
               onclick="currentDiv(1)"
             />
@@ -351,11 +350,11 @@ body, html {
             <div class="w3-row" style="width:300px;">
             <!-- "currentDiv(2)" link to 2nd slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
-          <div class="w3-card" style="height:250px; width: 500px;">
+          <div class="w3-card" style="height:250px; max-width: 500px;">
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./img/pexels-shotbysylvesterabigail-14083980.jpg"
-              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; width: 500px; overflow: hidden;"
+              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; max-width: 500px; overflow: hidden;"
               onclick="currentDiv(2)"
             />
              <div class="w3-container">
@@ -369,11 +368,11 @@ body, html {
             <div class="w3-row" style="width:300px;">
             <!-- "currentDiv(3)" link to 3rd slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
-            <div class="w3-card" style="height:250px; width:500px;">
+            <div class="w3-card" style="height:250px; max-width:500px;">
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./img/Screenshot 2025-06-21 at 6.28.24 PM.png"
-              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; width: 500px; overflow: hidden;"
+              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit:cover; object-position:center; height:150px; max-width: 500px; overflow: hidden;"
               onclick="currentDiv(3)"
             />
               <div class="w3-container">
@@ -387,11 +386,11 @@ body, html {
             <div class="w3-row" style="width:300px;">
             <!-- "currentDiv(4)" link to 4th slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
-            <div class="w3-card" style="height:250px; width: 500px;">
+            <div class="w3-card" style="height:250px; max-width: 500px;">
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./img/pexels-pattjjee-13815521.jpg"
-              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit: cover; object-position: center; height:150px; width: 500px; overflow: hidden;"
+              style="width: 100%; height:100%; cursor: pointer; padding: 7px; object-fit: cover; object-position: center; height:150px; max-width: 500px; overflow: hidden;"
               onclick="currentDiv(4)"
             />
               <div class="w3-container">
@@ -405,11 +404,11 @@ body, html {
             <div class="w3-row" style="width:300px;">
             <!-- "currentDiv(4)" link to 4th slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
-            <div class="w3-card" style="height: 250px; width: 500px;">
+            <div class="w3-card" style="height: 250px; max-width: 500px;">
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./img/Screenshot 2025-06-21 at 6.29.31 PM.png"
-              style="width: 100%; height: 100%; cursor: pointer; padding: 7px; object-fit: cover; object-position: center; height: 150px; width: 500px; overflow: hidden;"
+              style="width: 100%; height: 100%; cursor: pointer; padding: 7px; object-fit: cover; object-position: center; height: 150px; max-width: 500px; overflow: hidden;"
               onclick="currentDiv(5)"
             />
               <div class="w3-container">
@@ -429,7 +428,7 @@ body, html {
           <!-- scrollable area begin -->
           <!-- 3 columns of scrollable areas - using w3-row and w3-col classes for partitions -->
           <div class="w3-row">
-            <div class="w3-col s4 w3-padding" style="background-color: #da9086;">
+            <div class="w3-col m4 w3-padding" style="background-color: #da9086;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -453,7 +452,7 @@ body, html {
                 </p>
               </div>
             </div>
-            <div class="w3-col s4 w3-padding" style="background-color:azure;">
+            <div class="w3-col m4 w3-padding" style="background-color:azure;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -472,7 +471,7 @@ body, html {
                 </p>
               </div>
             </div>
-            <div class="w3-col s4 w3-padding" style="background-color: #da9086;">
+            <div class="w3-col m4 w3-padding" style="background-color: #da9086;">
               <div
                 class="w3-dark-grey w3-center"
                 style="
@@ -511,7 +510,7 @@ body, html {
 <!-- skate shop table section" -->
   <div class="w3-container w3-padding-64 w3-padding-large;" style="background-color:#da9086; border-color: #da9086;" id="shops">
     <div class="w3-content">
-        <div class="w3-padding-large">
+        
           <h1 class="w3-center">shops</h1>
           <!-- add sortable table begin -->
           <!-- step 1: if the table displays images, add image files to img folder -->
@@ -521,36 +520,36 @@ body, html {
 
           <table id="myTable" class="w3-table-all">
             <thead>
-              <tr style="color: black; font-size: larger; width: 1100px;">
+              <tr style="color: black; font-size: inherit; max-width: 1100px; min-width: none;">
                 <th>shop</th>
                 <th>name</th>
                 <th>location</th>
                 <th>year founded</th>
               </tr>
             </thead>
-            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
-              <td><img src="./img/ftc-storefront.jpeg" style="width: 120px;" /></td>
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: inherit;">
+              <td><img src="./img/ftc-storefront.jpeg" style="width: 100px;" /></td>
               <td>ftc</td>
               <td>1632 haight st.</td>
               <td>1994</td>
             </tr>
-            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
+            <tr class="w3-hover-sand" style="background-color: azure; font-size:inherit;">
               <td>
-                <img src="./img/Deluxe-Skate-Shop-San-Franscisco.jpg" style="width: 120px; height: 120px;" />
+                <img src="./img/Deluxe-Skate-Shop-San-Franscisco.jpg" style="width: 100px; height: 100px;" />
               </td>
               <td>dlx</td>
               <td>2330 mission st</td>
               <td>1986</td>
             </tr>
-            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px;">
-              <td><img src="./img/lowkey.jpg" style="width: 120px; height: 120px; object-fit: cover; object-position: center;" /></td>
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: inherit;">
+              <td><img src="./img/lowkey.jpg" style="width: 100px; height: 100px; object-fit: cover; object-position: center;" /></td>
               <td>lowkey</td>
               <td>697 geary st.</td>
               <td>2019</td>
             </tr>
-            <tr class="w3-hover-sand" style="background-color: azure; font-size: 20px">
+            <tr class="w3-hover-sand" style="background-color: azure; font-size: inherit">
               <td>
-                <img src="./img/mission-skate.jpeg" style="width: 120px; height: 120px; object-fit: cover; object-position: center;" />
+                <img src="./img/mission-skate.jpeg" style="width: 100px; height: 100px; object-fit: cover; object-position: center;" />
               </td>
               <td>mission</td>
               <td>3045 24th st.</td>
@@ -579,11 +578,11 @@ body, html {
           <!-- step 3: look for the youtube video embedded code and copy the code snippet -->
           <!-- step 4: paste the code snippet in the space created with w3-row and w3-col classes -->
 
-          <div class="w3-row w3-row-padding;">
+          <div class="w3-row w3-row-padding w3-center">
             <!-- create 1st column -->
-            <div class="w3-col m6 w3-center">
+            <div class="w3-col s12 m6 l6 w3-center video-container">
               <!-- paste the YouTube video link -->
-              <iframe width="500" height="300" 
+              <iframe width="100%" height="300" style="max-width: 600px;" 
               src="https://www.youtube.com/embed/tV01JADspNo?si=62uhRLooLGZtZ6W5" 
               title="YouTube video player" 
               frameborder="0" 
@@ -592,9 +591,9 @@ body, html {
             </iframe>
             </div>
             <!-- create 2nd column -->
-            <div class="w3-col m4 w3-center">
+            <div class="w3-col s12 m6 l6 w3-center video-container">
               <!-- paste the YouTube video link -->
-            <iframe width="500" height="300" 
+            <iframe width="100%" height="300" style="max-width: 600px;"
             src="https://www.youtube.com/embed/NmcSSQKH1d8?si=Zyac8YoI2S4bZyzc" 
             title="YouTube video player" 
             frameborder="0" 
@@ -602,10 +601,12 @@ body, html {
             >
           </iframe>
             </div>
+            </div>
             <!-- create 3rd column -->
-            <div class="w3-col m6 w3-center">
+          <div class="w3-row w3-row-padding w3-center video-container">
+            <div class="w3-col s12 m6 l6 w3-center">
               <!-- paste the YouTube video link -->
-             <iframe width="500" height="300" 
+             <iframe width="100%" height="300" style="max-width: 600px;" 
              src="https://www.youtube.com/embed/OugnAu0B1Qk?si=M5UrqLIybLEM4IIT" 
              title="YouTube video player" 
              frameborder="0" 
@@ -613,8 +614,8 @@ body, html {
             </iframe>
             </div>
 
-            <div class="w3-col m4 w3-center">
-              <iframe width="500" height="300" 
+            <div class="w3-col s12 m6 l6 w3-center video-container">
+              <iframe width="100%" height="300" style="max-width: 600px;"
               src="https://www.youtube.com/embed/hXrdZ5kWRqs?si=7oDCuTFxluxhRJ7T" 
               title="YouTube video player" 
               frameborder="0" 
@@ -622,9 +623,8 @@ body, html {
             </iframe>
             </div>
           </div>
-
+          </div>
           <!-- repeat the steps above to display more youtube videos -->
-          <div class="w3-row">
             <!-- add code to display more youtube videos here... -->
           </div>
           <!-- add youtube video end -->
@@ -659,7 +659,7 @@ body, html {
               <div
                 id="accordion1"
                 class="w3-hide w3-container"
-                style="height: 260px"
+                style="height: 260px; min-width: none;"
               >
                 <p>
                  "This Old Ledge" is a YouTube series from Thrasher Magazine that explores the cultural and architectural history of well-known skateboarding spots. 
@@ -704,7 +704,7 @@ body, html {
 
 <!-- local legends -->
 <div class="bgimg-2 w3-display-container" 
-      style="max-width: 2500px; min-width: 500px;"
+      style="max-width: 2500px; min-width: none;"
       id="home"
       >
 <div class="w3-container" style="padding:128px 16px; color: azure;" id="local legends">
@@ -874,13 +874,13 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-bottom w3-bar w3-center w3-card w3-black">
-  <a href="#home" class="w3-center w3-button w3-light-grey" style="height: 40px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-center w3-button w3-light-grey" style="max-height: 40px; min-height: none;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-left" style="padding-left: 40px; font-size: 12px;">
     <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> san francisco, ca us</p>
     <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> phone: +00 151515</p>
     <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> email: mail@mail.com</p>
   </div>
-  <div class="w3-xlarge w3-section w3-right" style="padding-right: 40px;">
+  <div class="w3-large w3-section w3-right" style="padding-right: 40px;">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
